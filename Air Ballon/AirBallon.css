@@ -1,0 +1,156 @@
+.face_outline {
+
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 30%;
+  rotate: 45deg;
+  position: absolute;
+  top: 78px;
+  left: 400px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  background-image: linear-gradient(135deg, #f10707 25%, transparent 25%),
+    linear-gradient(225deg, #f10707 25%, transparent 25%),
+    linear-gradient(45deg, #f10707 25%, transparent 25%),
+    linear-gradient(315deg, #f10707 25%, #ffffff 25%);
+  background-position: 0px 0, 0px 0, 0 0, 0 0;
+  background-size: 50px 24px;
+  background-repeat: repeat;
+}
+
+.sitting_container {
+
+  background-color: #ffffff;
+  opacity: 0.9;
+  background-image: linear-gradient(0deg, #ffffff 50%, #c61010 50%);
+  background-size: 11px 11px;
+  position: absolute;
+  width: 120px;
+  height: 70px;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  top: 470px;
+  left: 480px;
+  display: flex;
+  justify-content: space-between;
+  border: 8px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes swing2 {
+  0% {
+    transform: rotate(2.5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(2.5deg);
+  }
+}
+
+.face_outline {
+  /* Your existing styles here */
+
+  animation: swing 3s ease-in-out infinite;
+}
+
+.sitting_container{
+    animation: swing 3s ease-in-out infinite;
+}
+
+.one{
+   animation: swing 3s ease-in-out infinite;
+}
+.two{
+  animation: swing 3s ease-in-out infinite;
+}
+.three{
+  animation: swing 3s ease-in-out infinite;
+}
+.four{
+  animation: swing 3s ease-in-out infinite;
+}
+.eclipse{
+  animation: swing2 3s ease-in-out infinite;
+}
+
+
+.eclipse {
+  width: 75px;
+  height: 40px;
+  background-color: black;
+  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 60%;
+  border-top-right-radius: 60%;
+  border-top-left-radius: 60%;
+  position: absolute;
+  top: 382px;
+  left: 512px;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  -webkit-box-shadow: inset -1px -5px 43px -20px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: inset -1px -5px 43px -20px rgba(0, 0, 0, 0.35);
+  box-shadow: inset -1px -5px 43px -20px rgba(0, 0, 0, 0.35);
+}
+
+.one {
+  width: 91px;
+  height: 1px;
+  rotate: 76deg;
+  position: absolute;
+  background-color: black;
+  top: 422px;
+  left: 532px;
+  border-color: black;
+}
+.two {
+  width: 91px;
+  height: 1px;
+  rotate: 99deg;
+  position: absolute;
+  background-color: black;
+  top: 422px;
+  left: 480px;
+  border-color: black;
+}
+
+.three {
+  width: 63px;
+  height: 1px;
+  rotate: 99deg;
+  position: absolute;
+  background-color: black;
+  top: 430px;
+  left: 475px;
+  border-color: black;
+}
+
+.four {
+  width: 63px;
+  height: 1px;
+  rotate: 75deg;
+  position: absolute;
+  background-color: black;
+  top: 430px;
+  left: 563px;
+  border-color: black;
+}
